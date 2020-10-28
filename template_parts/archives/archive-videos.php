@@ -50,9 +50,9 @@
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                     <aside class="sidebar">
-                        <?php if ( is_active_sidebar( 'sidebar-weekly-widget' ) ) : ?>
-                            <div id="sidebar-weekly-widget" class="primary-sidebar widget-area" role="complementary">
-                                <?php dynamic_sidebar( 'sidebar-weekly-widget' ); ?>
+                        <?php if ( is_active_sidebar( 'sidebar-videos-widget' ) ) : ?>
+                            <div id="sidebar-videos-widget" class="primary-sidebar widget-area" role="complementary">
+                                <?php dynamic_sidebar( 'sidebar-videos-widget' ); ?>
                             </div>
                         <?php endif; ?>
                     </aside>

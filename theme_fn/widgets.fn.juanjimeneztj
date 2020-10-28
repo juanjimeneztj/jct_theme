@@ -19,5 +19,17 @@ function juanjimeneztj_widgets_init() {
         'before_widget' => '<div class="jackcartertrading-sidebar-page-widget">',
         'after_widget'  => '</div>',
     ) );
+    register_sidebar( array(
+        'name'          => 'Sidebar Videos widgets',
+        'id'            => 'sidebar-videos-widget',
+        'before_widget' => '<div class="jackcartertrading-sidebar-videos-widget">',
+        'after_widget'  => '</div>',
+    ) );
+    register_sidebar( array(
+        'name'          => 'Sidebar Articles widgets',
+        'id'            => 'sidebar-articles-widget',
+        'before_widget' => '<div class="jackcartertrading-sidebar-articles-widget">',
+        'after_widget'  => '</div>',
+    ) );
 }
 add_action( 'widgets_init', 'juanjimeneztj_widgets_init' );

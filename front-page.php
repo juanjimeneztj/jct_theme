@@ -69,17 +69,11 @@ get_header();?>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
-                <div class="block-home-page">
-                    <h1>
-                        Lorem Ipsum<br class="d-none d-md-block" />
-                        <strong>Dolor Sit Ameta</strong>
-                    </h1>
-                    <?php if ( is_active_sidebar( 'home-page-widget' ) ) : ?>
-                        <div id="home-page-widget" class="primary-sidebar widget-area" role="complementary">
-                            <?php dynamic_sidebar( 'home-page-widget' ); ?>
-                        </div>
-                    <?php endif; ?>
-                </div>
+                <?php if ( is_active_sidebar( 'home-page-widget' ) ) : ?>
+                    <div id="home-page-widget" class="primary-sidebar widget-area" role="complementary">
+                        <?php dynamic_sidebar( 'home-page-widget' ); ?>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
         <div class="row mt-5">
