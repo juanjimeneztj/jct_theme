@@ -546,8 +546,10 @@ main.archives .sidebar{
     padding: 30px;
 }
 .recent-posts article{
+    display: block;
     padding: 15px;
     background-color: var(--white);
+    width: 100%;
 }
 .recent-posts article h3,.recent-posts article h3 > a{
     color: var(--black);
@@ -579,6 +581,9 @@ body.archive.category-videos article{
 body.archive.category-videos article p{
     margin-bottom: 0px!important;
 }
+body.home .recent-posts article > .row {
+    height: 100%;
+}
 .img-post-thumbnail {
     display: flex;
     height: 100%;
@@ -600,6 +605,23 @@ body.archive.category-videos article p{
 @media all and (max-width: 991px){
     .recent-posts article img{
         padding: 15px 0;
+    }
+    .img-post-thumbnail {
+        display: block;
+        height: auto;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    .img-post-thumbnail > img{
+        height: auto;
+        width: auto;
+        min-width: auto;
+        max-width: 100%;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0, 0);
     }
 }
 @media all and (max-width: 767px){

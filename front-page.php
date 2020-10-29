@@ -88,10 +88,10 @@ get_header();?>
                         <div class="row">
                             <div class="col">
                                 <div class="box">
-                                    <div class="row align-items-center">
+                                    <div class="row d-flex align-items-stretch">
                                         <?php 
                                             $args = array (
-                                                'posts_per_page'         => '9',
+                                                'posts_per_page'         => '6',
                                                 'order'                  => 'DESC'
                                             );
                                             
@@ -101,16 +101,16 @@ get_header();?>
                                                 while ($all_query->have_posts()) : $all_query->the_post();
                                         ?>
                                                     
-                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 d-flex align-items-stretch">
                                                     <article id="post-<?php the_ID();?>" <?php post_class();?>>
-                                                        <div class="row">
+                                                        <div class="row align-self-stretch">
                                                             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
                                                                 <a class="img-post-thumbnail" href="<?=get_the_permalink()?>">
                                                                     <img src="<?=get_the_post_thumbnail_url()?>" class="img-fluid" alt="Responsive image">
                                                                 </a>
                                                             </div>
                                                             <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
-                                                                <h3 class="oswald text-uppercase"><a class="oswald text-uppercase" href="<?=get_the_permalink()?>"><?=substr(get_the_title(), 0, 32);?>[...]</a></h3>
+                                                                <h3 class="oswald text-uppercase"><a class="oswald text-uppercase" href="<?=get_the_permalink()?>"><?=get_the_title()?></a></h3>
                                                                 <p class="post-details"><?=get_the_date()?></p>
                                                                 <a href="<?=get_the_permalink()?>" class="btn btn-bordered">Read More</a>
                                                             </div>
