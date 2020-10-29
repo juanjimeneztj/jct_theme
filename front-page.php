@@ -110,7 +110,7 @@ get_header();?>
                                                                 </a>
                                                             </div>
                                                             <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
-                                                                <h3 class="oswald text-uppercase"><a class="oswald text-uppercase" href="<?=get_the_permalink()?>"><?php the_title();?></a></h3>
+                                                                <h3 class="oswald text-uppercase"><a class="oswald text-uppercase" href="<?=get_the_permalink()?>"><?=substr(get_the_title(), 0, 32);?>[...]</a></h3>
                                                                 <p class="post-details"><?=get_the_date()?></p>
                                                                 <a href="<?=get_the_permalink()?>" class="btn btn-bordered">Read More</a>
                                                             </div>
