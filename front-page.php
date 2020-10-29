@@ -101,7 +101,7 @@ get_header();?>
                                                 while ($all_query->have_posts()) : $all_query->the_post();
                                         ?>
                                                     
-                                                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-4">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
                                                     <article id="post-<?php the_ID();?>" <?php post_class();?>>
                                                         <div class="row">
                                                             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
