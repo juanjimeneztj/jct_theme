@@ -10,7 +10,7 @@
     if (have_posts()) :
         while (have_posts()) : the_post();
 ?>
-    <div class="block-title" style="background-image: url('<?=get_template_directory_uri()?>/images/bg_page.jpg');">
+    <div class="block-title <?=get_the_title()?>" style="background-image: url('<?=get_template_directory_uri()?>/images/<?=(get_the_title()=='About')?'bg_about':((get_the_title()=='Contact')?'bg_contact':'bg_page') ?>.png');">
         <div class="container">
             <div class="row">
                 <div class="col">
