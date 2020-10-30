@@ -134,19 +134,21 @@ get_header();?>
             <div class="col">
                 <div class="cib-about">
                     <div class="row align-items-center">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
                             <div class="img-moors">
                                 <img src="<?=get_template_directory_uri()?>/images/jack_carter.png" alt="Jack Carter">   
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
-                            <h3>About</h3>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9">
+                            <div class="about-description">
+                                <h3>About</h3>
 
-                            <h2 class="text-uppercase">JACK CARTER</h2>
-                            
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nam, in consequatur accusantium officiis doloremque possimus! Molestiae ducimus sed commodi veritatis, culpa omnis totam tempore beatae. Voluptatem maxime quas quod.</p>
+                                <h2 class="text-uppercase">JACK CARTER</h2>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet nihil sunt incidunt quo, vitae magni maiores porro sapiente corrupti reprehenderit et suscipit quasi voluptas quisquam deleniti eos praesentium natus illum debitis? Voluptates, molestias. Aspernatur sit quia ipsum doloremque eum eos officia optio, non hic placeat iure ullam id rerum, ratione nisi iste nam neque saepe quasi cupiditate. Placeat ad ex numquam assumenda maiores ea vel quos aut esse dignissimos fugiat, reprehenderit eius sequi fuga dolore, unde dolor quis ipsum!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nam, in consequatur accusantium officiis doloremque possimus! Molestiae ducimus sed commodi veritatis, culpa omnis totam tempore beatae. Voluptatem maxime quas quod.</p>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet nihil sunt incidunt quo, vitae magni maiores porro sapiente corrupti reprehenderit et suscipit quasi voluptas quisquam deleniti eos praesentium natus illum debitis? Voluptates, molestias. Aspernatur sit quia ipsum doloremque eum eos officia optio, non hic placeat iure ullam id rerum, ratione nisi iste nam neque saepe quasi cupiditate. Placeat ad ex numquam assumenda maiores ea vel quos aut esse dignissimos fugiat, reprehenderit eius sequi fuga dolore, unde dolor quis ipsum!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
