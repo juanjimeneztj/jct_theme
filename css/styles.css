@@ -262,10 +262,14 @@ main.home-page {
     padding: 10px 0 40px;
 }
 main.home-page .carousel-inner {
-    height: 340px;
+    height: 560px;
 }
 main.home-page .carousel-item {
     position: relative;
+    height: 560px;
+}
+main.home-page .carousel-item img {
+    min-height: 100%;
 }
 main.home-page .carousel-item::before {
     content:'';
@@ -331,7 +335,24 @@ main.home-page .cib-about p:last-of-type{
     margin-bottom: 0!important;
 }
 
+@media all and (max-width: 1601px){
+    main.home-page .carousel-inner {
+        height: 540px;
+    }
+    main.home-page .carousel-item {
+        position: relative;
+        height: 540px;
+    }
+}
+
 @media all and (max-width: 1250px){
+    main.home-page .carousel-inner {
+        height: 400px;
+    }
+    main.home-page .carousel-item {
+        position: relative;
+        height: 400px;
+    }
     main.home-page .cib-about{
         padding: 40px;
     }
